@@ -1,0 +1,70 @@
+<!-- Reference: https://used.toyota.co.uk/approved-used?step=carFilter&imagery[]=10829&mileage=8000&deposit=250&term=42&monthlypay=425&payinfull=1000,200000&depositMultiple=6&maintenance=0&financeGroupType=personal&acceptedFinance=false&p=1 -->
+<div class="app-section">
+  <div class="app-container">
+    <div class="app-section__content">
+      <h2 class="app-section__title">Used cars</h2>
+      <div class="app-section__description">
+        <p>Buying an approved used Toyota online is easy. With a range of used cars, finance options, and the opportunity to part exchange your current car, buying online delivers full peace of mind. All of our Toyota Approved Used Cars come with a minimum of 12 months warranty and 12 months roadside assistance. Browse our most popular models and buy online today.</p>
+      </div>
+      <div class="app-section__triggers">
+        <button class="app-load-button">Load cars</button>
+        <button class="app-reset-button" aria-controls="reset-alertdialog" aria-expanded="false" aria-haspopup="dialog">Reset</button>
+      </div>
+      <div class="app-section__live-region" aria-label="Used cars" role="alert"></div>
+      <div class="app-teaser-list" style="display:none;">
+        <div class="app-teaser">
+          <div class="app-teaser__skeleton">
+            <div aria-hidden="true"></div>
+            <div aria-hidden="true"></div>
+            <div aria-hidden="true"></div>
+            <span class="visually-hidden">Loading content ...</span>
+          </div>
+          <div class="app-teaser__content" aria-busy="true">
+            <a href="https://example.com/linkwrap" rel="nofollow">
+              <h3>Car 1</h3>
+              <img src="https://picsum.photos/365/205?id=1" alt="">
+              <p>This car is the first car in the list.</p>
+            </a>
+          </div>
+        </div>
+        <div class="app-teaser">
+          <div class="app-teaser__skeleton">
+            <div aria-hidden="true"></div>
+            <div aria-hidden="true"></div>
+            <div aria-hidden="true"></div>
+            <span class="visually-hidden">Loading content ...</span>
+          </div>
+          <div class="app-teaser__content" aria-busy="true">
+            <a href="https://example.com/linkwrap" rel="nofollow">
+              <h3>Car 2</h3>
+              <img src="https://picsum.photos/365/205?id=2" alt="">
+              <p>This car is the second car in the list.</p>
+            </a>
+          </div>
+        </div>
+        <div class="app-teaser">
+          <div class="app-teaser__skeleton">
+            <div aria-hidden="true"></div>
+            <div aria-hidden="true"></div>
+            <div aria-hidden="true"></div>
+            <span class="visually-hidden">Loading content ...</span>
+          </div>
+          <div class="app-teaser__content" aria-busy="true">
+            <a href="https://example.com/linkwrap" rel="nofollow">
+              <h3>Car 3</h3>
+              <img src="https://picsum.photos/365/205?id=3" alt="">
+              <p>This car is the third card in the list.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <dialog role="alertDialog" id="reset-alertdialog" aria-labelledby="reset-dialog-title" aria-describedby="reset-dialog-desc">
+        <h2 id="reset-dialog-title">Reset cars</h2>
+        <p id="reset-dialog-desc">Are you sure you want to reset the cars?</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+    </div>
+  </div>
+</div>

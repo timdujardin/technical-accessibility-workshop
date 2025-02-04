@@ -1,0 +1,83 @@
+<!-- Reference: https://forms2.toyota.co.uk/contact-us -->
+<div class="app-section">
+  <div class="app-container">
+    <div class="app-section__content">
+      <h2 class="app-section__title">General Enquiries</h2>
+      <form class="app-form">
+        <div class="app-form__item">
+          <label class="block" for="type-of-enquiry">
+            <span>Type of Enquiry</span>
+          </label>
+          <select id="type-of-enquiry" name="type-of-enquiry">
+            <option value="">Please select</option>
+            <option value="general-enquiry:1">Enquiry about my vehicle</option>
+            <option value="general-enquiry:2">Enquiry about my Servicing, Parts or Accessories</option>
+            <option value="general-enquiry:3">Help with my Toyota™</option>
+            <option value="general-enquiry:4">Other enquiry</option>
+          </select>
+        </div>
+        <div class="app-form__item">
+          <label for="title">
+            <span>Title</span>
+          </label>
+          <select id="title" name="title">
+            <option value="">Please select</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            <option value="Ms">Ms</option>
+            <option value="Mx">Mx</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Professor">Professor</option>
+            <option value="Reverend">Reverend</option>
+          </select>
+        </div>
+        <div class="app-form__item">
+          <label for="first-name">
+            <span>First name</span>
+          </label>
+          <input id="first-name" type="text" name="first-name" data-error-text="[error-message-to-add]">
+        </div>
+        <div class="app-form__item">
+          <label for="last-name">
+            <span>Last name</span>
+          </label>
+          <input id="last-name" type="text" name="last-name" data-error-text="[error-message-to-add]">
+        </div>
+        <div class="app-form__item">
+          <label for="email">
+            <span>Email</span>
+          </label>
+          <input id="email" type="email" name="email">
+          <p class="instruction">[instruction-to-add]</p>
+        </div>
+        <fieldset class="app-form__fieldset">
+          <legend>Vehicle information</legend>
+          <div class="app-form__item">
+            <label for="reg-num">
+              <span>Vehicle registration number</span>
+            </label>
+            <input id="reg-num" type="text" name="reg-num" data-error-text="[error-message-to-add]">
+            <p class="instruction">[instruction-to-add]</p>
+          </div>
+          <div class="app-form__item">
+            <label for="additional-info">
+              <span>Additional vehicle requests</span>
+            </label>
+            <textarea id="additional-info" rows="3" name="additional-info" required data-error-text="[error-message-to-add]"></textarea>
+            <p class="instruction">[instruction-to-add]</p>
+          </div>
+        </fieldset>
+        <div class="app-form__item">
+          <p>Be assured that Toyota will only share your personal information with companies that are an integral part of fulfilling the services we deliver. If you would like to find out more about how we process your data please visit our
+            <a href="https://www.toyota.co.uk/footer/privacy-policy" target="_blank" rel="noreferrer">privacy notice</a>
+            for details.
+          </p>
+        </div>
+        <div class="app-form__actions">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
