@@ -10,16 +10,15 @@
         <button class="app-load-button">Load cars</button>
         <button class="app-reset-button" aria-controls="reset-alertdialog" aria-expanded="false" aria-haspopup="dialog">Reset</button>
       </div>
-      <div class="app-section__live-region" aria-label="Used cars" role="alert"></div>
+      <!-- TODO: Add live region here -->
       <div class="app-teaser-list" style="display:none;">
         <div class="app-teaser">
           <div class="app-teaser__skeleton">
             <div aria-hidden="true"></div>
             <div aria-hidden="true"></div>
             <div aria-hidden="true"></div>
-            <span class="visually-hidden">Loading content ...</span>
           </div>
-          <div class="app-teaser__content" aria-busy="true">
+          <div class="app-teaser__content">
             <a href="https://example.com/linkwrap" rel="nofollow">
               <h3>Car 1</h3>
               <img src="https://picsum.photos/365/205?id=1" alt="">
@@ -32,9 +31,8 @@
             <div aria-hidden="true"></div>
             <div aria-hidden="true"></div>
             <div aria-hidden="true"></div>
-            <span class="visually-hidden">Loading content ...</span>
           </div>
-          <div class="app-teaser__content" aria-busy="true">
+          <div class="app-teaser__content">
             <a href="https://example.com/linkwrap" rel="nofollow">
               <h3>Car 2</h3>
               <img src="https://picsum.photos/365/205?id=2" alt="">
@@ -47,9 +45,8 @@
             <div aria-hidden="true"></div>
             <div aria-hidden="true"></div>
             <div aria-hidden="true"></div>
-            <span class="visually-hidden">Loading content ...</span>
           </div>
-          <div class="app-teaser__content" aria-busy="true">
+          <div class="app-teaser__content">
             <a href="https://example.com/linkwrap" rel="nofollow">
               <h3>Car 3</h3>
               <img src="https://picsum.photos/365/205?id=3" alt="">
@@ -58,13 +55,7 @@
           </div>
         </div>
       </div>
-      <dialog role="alertDialog" id="reset-alertdialog" aria-labelledby="reset-dialog-title" aria-describedby="reset-dialog-desc">
-        <h2 id="reset-dialog-title">Reset cars</h2>
-        <p id="reset-dialog-desc">Are you sure you want to reset the cars?</p>
-        <form method="dialog">
-          <button>OK</button>
-        </form>
-      </dialog>
+      <!-- TODO: Add interactive notification here -->
     </div>
   </div>
 </div>

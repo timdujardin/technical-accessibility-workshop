@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
         content?.setAttribute("aria-busy", "false");
       });
 
-      liveRegion.innerText = "Cars loaded.";
+      // TODO: Add message to liveRegion here
     }, 5000);
   });
 

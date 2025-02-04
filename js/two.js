@@ -23,9 +23,11 @@ window.addEventListener("load", () => {
       );
     });
 
-    form.insertAdjacentHTML(
-      "beforebegin",
-      `
+    // Only show validation message when required settings are correct
+    if (requiredFields.length > 0) {
+      form.insertAdjacentHTML(
+        "beforebegin",
+        `
       <div class="app-status-message app-status-message--error">
         <span id="app-status-message-title">4 errors found:</span>
         <ul role="list" class="app-comma-list" tabindex="-1" aria-labelledby="app-status-message-title">
@@ -36,8 +38,9 @@ window.addEventListener("load", () => {
         </ul>
       </div>
       `
-    );
+      );
 
-    document.querySelector(".app-status-message > ul")?.focus();
+      document.querySelector(".app-status-message > ul")?.focus();
+    }
   });
 });
