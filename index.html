@@ -4,19 +4,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Technical Accessibility Workshop | Toyota Motor Europe</title>
     <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/two.js"></script>
     <script src="./js/three.js"></script>
   </head>
   <body>
+    <a href="#main-content" class="visually-hidden focusable">
+      Go to main content
+    </a>
     <header>
       <div class="app-main-nav">
         <div class="app-container">
           <div class="app-main-nav__content">
             <a href="/" class="app-logo">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA2CDOTvZpcqTupp7q5LnXPU_23xZM1kN-aw&s">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA2CDOTvZpcqTupp7q5LnXPU_23xZM1kN-aw&s" alt="Homepage">
             </a>
             <nav class="app-main-menu">
               <ul role="list">
@@ -41,56 +44,208 @@
         </div>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       <div class="app-hero">
         <div class="app-container">
           <div class="app-hero__content">
-            <h1>Exercises</h1>
+            <h1>Technical Accessibility Workshop</h1>
           </div>
         </div>
       </div>
       <div class="app-section">
         <div class="app-container">
           <div class="app-section__content">
-            <h2 class="app-section__title">Buy a Used Toyota online</h2>
-            <img class="app-section__image" src="https://d2vykwbochoala.cloudfront.net/t_detail/dpr_2.0/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/9c3b840eeaf12bd9a3fa8c62772fe813891f27ae04a3fa51e8afce3c.jpg" width="400" height="400" alt="">
+            <h2 class="app-section__title" id="buy-used-toyota-online-title">Buy a Used Toyota online</h2>
+            <img class="app-section__image" src="https://d2vykwbochoala.cloudfront.net/t_detail/dpr_2.0/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/9c3b840eeaf12bd9a3fa8c62772fe813891f27ae04a3fa51e8afce3c.jpg" width="400" height="400" alt="Toyota Corolla named best family car at Car Of The Year awards 2025">
             <p>Buying an approved used Toyota online is easy. With a range of used cars, finance options, and the opportunity to part exchange your current car, buying online delivers full peace of mind.</p>
             <p>All of our Toyota Approved Used Cars come with a minimum of 12 months warranty and 12 months roadside assistance. Browse our most popular models and buy online today.</p>
           </div>
           <div class="app-section__actions">
-            <a href="/buy-used-cars">Read more</a>
+            <a href="/buy-used-cars" aria-labelledby="buy-used-toyota-online-title">Read more</a>
           </div>
         </div>
       </div>
       <div class="app-section">
         <div class="app-container">
           <div class="app-section__content">
-            <h3 class="app-section__title h2">Rely on a Toyota Approved Used Car</h3>
+            <h2 class="app-section__title">Rely on a Toyota Approved Used Car</h2>
             <div class="app-usps">
               <div class="app-usps__item">
-                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzIwMjMyZTsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJtMjQsNi42bDE1LjQ1LDQuMzN2MTMuMDVjMCwxMi40OC0xMi42MywxNi42Ni0xNS40OCwxNy40NS0yLjg2LS43OS0xNS40Mi00Ljk4LTE1LjQyLTE3LjQ1di0xMy4wNWwxNS40NS00LjMzbTAtMi42TDYuMDUsOS4wM3YxNC45NWMwLDE2LDE3LjkyLDIwLjAzLDE3LjkyLDIwLjAzLDAsMCwxNy45OC00LjAzLDE3Ljk4LTIwLjAzdi0xNC45NUwyNCw0aDBaIi8+Cjwvc3ZnPg==">
-                <h4 class="h3">Quality & Reliability</h4>
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzIwMjMyZTsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJtMjQsNi42bDE1LjQ1LDQuMzN2MTMuMDVjMCwxMi40OC0xMi42MywxNi42Ni0xNS40OCwxNy40NS0yLjg2LS43OS0xNS40Mi00Ljk4LTE1LjQyLTE3LjQ1di0xMy4wNWwxNS40NS00LjMzbTAtMi42TDYuMDUsOS4wM3YxNC45NWMwLDE2LDE3LjkyLDIwLjAzLDE3LjkyLDIwLjAzLDAsMCwxNy45OC00LjAzLDE3Ljk4LTIwLjAzdi0xNC45NUwyNCw0aDBaIi8+Cjwvc3ZnPg==" alt="">
+                <h2 class="h3">Quality & Reliability</h2>
                 <p>All Toyota Approved Used cars are inspected by our technicians and pass a comprehensive 145-point technical check, including a Hybrid Health Check, mechanical check & engine/battery condition check.</p>
-                <a href="/terms-and-conditions">Terms and conditions apply</a>
+                <a href="/terms-and-conditions" aria-label="Terms and conditions for quality and reliability">Terms and conditions apply</a>
               </div>
               <div class="app-usps__item">
-                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogbm9uZTsKICAgICAgICBzdHJva2U6ICMyMzIzMmQ7CiAgICAgICAgc3Ryb2tlLW1pdGVybGltaXQ6IDEwOwogICAgICAgIHN0cm9rZS13aWR0aDogM3B4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zNC44OCwxOC4wNmwzLjg1LTMuODUsMS41NywxLjU3Yy4yNCwyLjUxLS40Myw0Ljk3LTIuMjcsNi45NC0yLjU5LDIuNzYtNi43OCwzLjY1LTEwLjE1LDIuMzRsLTE1LjI4LDE1LjI4LTQuOTQtNC45NCwxNS4yNi0xNS4yNmMtMS4zMi0zLjI4LS42NS03LjE3LDItOS44MiwxLjk5LTEuOTksNC42OS0yLjg3LDcuMjktMi42MmwxLjU4LDEuNTgtMy44NSwzLjg1Yy0xLjM2LDEuMzYtMS4zNiwzLjU3LDAsNC45M2gwYzEuMzYsMS4zNiwzLjU3LDEuMzYsNC45MywwWiIvPgo8L3N2Zz4=">
-                <h4 class="h3">Toyota Approved Warranty</h4>
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogbm9uZTsKICAgICAgICBzdHJva2U6ICMyMzIzMmQ7CiAgICAgICAgc3Ryb2tlLW1pdGVybGltaXQ6IDEwOwogICAgICAgIHN0cm9rZS13aWR0aDogM3B4OwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zNC44OCwxOC4wNmwzLjg1LTMuODUsMS41NywxLjU3Yy4yNCwyLjUxLS40Myw0Ljk3LTIuMjcsNi45NC0yLjU5LDIuNzYtNi43OCwzLjY1LTEwLjE1LDIuMzRsLTE1LjI4LDE1LjI4LTQuOTQtNC45NCwxNS4yNi0xNS4yNmMtMS4zMi0zLjI4LS42NS03LjE3LDItOS44MiwxLjk5LTEuOTksNC42OS0yLjg3LDcuMjktMi42MmwxLjU4LDEuNTgtMy44NSwzLjg1Yy0xLjM2LDEuMzYtMS4zNiwzLjU3LDAsNC45M2gwYzEuMzYsMS4zNiwzLjU3LDEuMzYsNC45MywwWiIvPgo8L3N2Zz4=" alt="">
+                <h2 class="h3">Toyota Approved Warranty</h2>
                 <p>If your car is under 10 years, or 100,000 miles, a minimum of 12 months warranty is included, with an additional 12 month/10,000 miles warranty with every qualifying service (up to 10 years or 100,000 miles, whichever comes first).</p>
-                <a href="/toyota-warranty">Terms and conditions apply</a>
+                <a href="/toyota-warranty" aria-label="Terms and conditions for Toyota approved warranty">Terms and conditions apply</a>
               </div>
               <div class="app-usps__item">
-                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgc3Ryb2tlLW1pdGVybGltaXQ6IDEwOwogICAgICB9CgogICAgICAuY2xzLTEsIC5jbHMtMiB7CiAgICAgICAgZmlsbDogbm9uZTsKICAgICAgICBzdHJva2U6ICMyMDIzMmU7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAyLjVweDsKICAgICAgfQoKICAgICAgLmNscy0yIHsKICAgICAgICBzdHJva2UtbGluZWpvaW46IHJvdW5kOwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Im0zMS40NywyOS45NWgtOC4yNm0wLTguMTRoMTkuNDJ2OC4xNGgtNC41N20tMjYuNDEsMGgtNi4zNnYtNy4zNGwyLjQzLTIuNDloNi41NmwzLjk3LTUuMzNoNC45N3YxNS4xNmgtNC45N20wLDBjMCwxLjgtMS40OCwzLjI2LTMuMywzLjI2cy0zLjMtMS40Ni0zLjMtMy4yNiwxLjQ4LTMuMjcsMy4zLTMuMjcsMy4zLDEuNDYsMy4zLDMuMjdoMFptMTkuODIsMGMwLDEuOC0xLjQ4LDMuMjYtMy4zLDMuMjZzLTMuMy0xLjQ2LTMuMy0zLjI2LDEuNDgtMy4yNywzLjMtMy4yNywzLjMsMS40NiwzLjMsMy4yN2gwWk01LjM3LDI0Ljc2aDQuMjgiLz4KICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Im0zOC44NSwxNy41M2MuMy43MywxLjAxLDEuMjUsMS44NSwxLjI1LDEuMSwwLDItLjg5LDItMnMtLjg5LTItMi0yVjYuMDMiLz4KICA8cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMzUuNTcgMjEuODEgMzUuNTcgMTcuMTggMzkuNDUgNy4yOCAzMC4yNSAxNC45MiAzMC4yNSAyMS44MSAzNS41NyAyMS44MSIvPgo8L3N2Zz4=">
-                <h4 class="h3">Roadside Assistance</h4>
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgc3Ryb2tlLW1pdGVybGltaXQ6IDEwOwogICAgICB9CgogICAgICAuY2xzLTEsIC5jbHMtMiB7CiAgICAgICAgZmlsbDogbm9uZTsKICAgICAgICBzdHJva2U6ICMyMDIzMmU7CiAgICAgICAgc3Ryb2tlLXdpZHRoOiAyLjVweDsKICAgICAgfQoKICAgICAgLmNscy0yIHsKICAgICAgICBzdHJva2UtbGluZWpvaW46IHJvdW5kOwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Im0zMS40NywyOS45NWgtOC4yNm0wLTguMTRoMTkuNDJ2OC4xNGgtNC41N20tMjYuNDEsMGgtNi4zNnYtNy4zNGwyLjQzLTIuNDloNi41NmwzLjk3LTUuMzNoNC45N3YxNS4xNmgtNC45N20wLDBjMCwxLjgtMS40OCwzLjI2LTMuMywzLjI2cy0zLjMtMS40Ni0zLjMtMy4yNiwxLjQ4LTMuMjcsMy4zLTMuMjcsMy4zLDEuNDYsMy4zLDMuMjdoMFptMTkuODIsMGMwLDEuOC0xLjQ4LDMuMjYtMy4zLDMuMjZzLTMuMy0xLjQ2LTMuMy0zLjI2LDEuNDgtMy4yNywzLjMtMy4yNywzLjMsMS40NiwzLjMsMy4yN2gwWk01LjM3LDI0Ljc2aDQuMjgiLz4KICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Im0zOC44NSwxNy41M2MuMy43MywxLjAxLDEuMjUsMS44NSwxLjI1LDEuMSwwLDItLjg5LDItMnMtLjg5LTItMi0yVjYuMDMiLz4KICA8cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMzUuNTcgMjEuODEgMzUuNTcgMTcuMTggMzkuNDUgNy4yOCAzMC4yNSAxNC45MiAzMC4yNSAyMS44MSAzNS41NyAyMS44MSIvPgo8L3N2Zz4=" alt="">
+                <h2 class="h3">Roadside Assistance</h2>
                 <p>All Toyota Approved Used cars come complete with 12 months full roadside assistance coverage that includes breakdown and recovery services at your home or by the roadside to give you peace of mind.</p>
-                <a href="/new-customer-terms-and-conditions">Terms and conditions apply</a>
+                <a href="/new-customer-terms-and-conditions" aria-label="Terms and conditions for roadside assistance">Terms and conditions apply</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- TODO: Add two.html here -->
-      <!-- TODO: Add three.html here -->
+      <div class="app-section">
+        <div class="app-container">
+          <div class="app-section__content">
+            <h2 class="app-section__title">General Enquiries</h2>
+            <form class="app-form">
+              <div class="app-form__item">
+                <label class="block" for="type-of-enquiry">
+                  <span>Type of Enquiry</span>
+                </label>
+                <select id="type-of-enquiry" name="type-of-enquiry">
+                  <option value="">Please select</option>
+                  <option value="general-enquiry:1">Enquiry about my vehicle</option>
+                  <option value="general-enquiry:2">Enquiry about my Servicing, Parts or Accessories</option>
+                  <option value="general-enquiry:3">Help with my Toyota™</option>
+                  <option value="general-enquiry:4">Other enquiry</option>
+                </select>
+              </div>
+              <div class="app-form__item">
+                <label for="title">
+                  <span>Title</span>
+                </label>
+                <select id="title" name="title">
+                  <option value="">Please select</option>
+                  <option value="Mr">Mr</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Miss">Miss</option>
+                  <option value="Ms">Ms</option>
+                  <option value="Mx">Mx</option>
+                  <option value="Doctor">Doctor</option>
+                  <option value="Professor">Professor</option>
+                  <option value="Reverend">Reverend</option>
+                </select>
+              </div>
+              <div class="app-form__item">
+                <label for="first-name">
+                  <span>First name</span>
+                </label>
+                <input id="first-name" type="text" name="first-name" required data-error-text="First name is required.">
+              </div>
+              <div class="app-form__item">
+                <label for="last-name">
+                  <span>Last name</span>
+                </label>
+                <input id="last-name" type="text" name="last-name" required data-error-text="Last name is required.">
+              </div>
+              <div class="app-form__item">
+                <label for="email">
+                  <span>Email</span>
+                </label>
+                <input id="email" type="email" name="email" aria-describedby="email-instruction">
+                <p class="instruction" id="email-instruction">For example: firstname.lastname@email.com</p>
+              </div>
+              <fieldset class="app-form__group">
+                <legend>Vehicle information</legend>
+                <div class="app-form__item">
+                  <label for="reg-num">
+                    <span>Vehicle registration number</span>
+                  </label>
+                  <input id="reg-num" type="text" name="reg-num" required aria-describedby="veh-reg-num-instruction" data-error-text="Please follow the described format.">
+                  <p class="instruction" id="veh-reg-num-instruction">In the format of 2 letters followed by 2 numbers, followed by a space and then 3 letters</p>
+                </div>
+                <div class="app-form__item">
+                  <label for="additional-info">
+                    <span>Additional vehicle requests</span>
+                  </label>
+                  <textarea id="additional-info" rows="3" name="additional-info" required aria-describedby="add-info-instruction" data-error-text="You have exceeded the maximum of 2000 characters."></textarea>
+                  <p class="instruction" id="add-info-instruction">Limit your requests to a maximum of 2000 characters</p>
+                </div>
+              </fieldset>
+              <div class="app-form__item">
+                <p>Be assured that Toyota will only share your personal information with companies that are an integral part of fulfilling the services we deliver. If you would like to find out more about how we process your data please visit our
+                  <a href="https://www.toyota.co.uk/footer/privacy-policy" target="_blank" rel="noreferrer">
+                    <span>privacy policy</span>
+                    <span class="visually-hidden">(opens in a new tab)</span>
+                  </a>
+                  for details.
+                </p>
+              </div>
+              <div class="app-form__actions">
+                <button type="submit">Send enquiry</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="app-section">
+        <div class="app-container">
+          <div class="app-section__content">
+            <h2 class="app-section__title">Used cars</h2>
+            <div class="app-section__description">
+              <p>Buying an approved used Toyota online is easy. With a range of used cars, finance options, and the opportunity to part exchange your current car, buying online delivers full peace of mind. All of our Toyota Approved Used Cars come with a minimum of 12 months warranty and 12 months roadside assistance. Browse our most popular models and buy online today.</p>
+            </div>
+            <div class="app-section__triggers">
+              <button class="app-load-button">Load cars</button>
+              <button class="app-reset-button" aria-controls="reset-alertdialog" aria-expanded="false" aria-haspopup="dialog">Reset</button>
+            </div>
+            <div class="app-section__live-region" aria-label="Used cars" role="alert"></div>
+            <div class="app-teaser-list" style="display:none;">
+              <div class="app-teaser">
+                <div class="app-teaser__skeleton">
+                  <div aria-hidden="true"></div>
+                  <div aria-hidden="true"></div>
+                  <div aria-hidden="true"></div>
+                  <span class="visually-hidden">Loading content ...</span>
+                </div>
+                <div class="app-teaser__content" aria-busy="true">
+                  <a href="https://example.com/linkwrap" rel="nofollow">
+                    <h3>Car 1</h3>
+                    <img src="https://picsum.photos/365/205?id=1" alt="">
+                    <p>This car is the first car in the list.</p>
+                  </a>
+                </div>
+              </div>
+              <div class="app-teaser">
+                <div class="app-teaser__skeleton">
+                  <div aria-hidden="true"></div>
+                  <div aria-hidden="true"></div>
+                  <div aria-hidden="true"></div>
+                  <span class="visually-hidden">Loading content ...</span>
+                </div>
+                <div class="app-teaser__content" aria-busy="true">
+                  <a href="https://example.com/linkwrap" rel="nofollow">
+                    <h3>Car 2</h3>
+                    <img src="https://picsum.photos/365/205?id=2" alt="">
+                    <p>This car is the second car in the list.</p>
+                  </a>
+                </div>
+              </div>
+              <div class="app-teaser">
+                <div class="app-teaser__skeleton">
+                  <div aria-hidden="true"></div>
+                  <div aria-hidden="true"></div>
+                  <div aria-hidden="true"></div>
+                  <span class="visually-hidden">Loading content ...</span>
+                </div>
+                <div class="app-teaser__content" aria-busy="true">
+                  <a href="https://example.com/linkwrap" rel="nofollow">
+                    <h3>Car 3</h3>
+                    <img src="https://picsum.photos/365/205?id=3" alt="">
+                    <p>This car is the third card in the list.</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <dialog role="alertDialog" id="reset-alertdialog" aria-labelledby="reset-dialog-title" aria-describedby="reset-dialog-desc">
+              <h2 id="reset-dialog-title">Reset cars</h2>
+              <p id="reset-dialog-desc">Are you sure you want to reset the cars?</p>
+              <form method="dialog">
+                <button>OK</button>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
