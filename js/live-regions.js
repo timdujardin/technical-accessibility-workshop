@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
 
   const dialogForm = document.querySelector("dialog form");
 
-  dialogForm.addEventListener("submit", () => {
+  dialogForm?.addEventListener("submit", () => {
     teasers.forEach((teaser) => {
       const skeleton = teaser.querySelector(".app-teaser__skeleton");
       const content = teaser.querySelector(".app-teaser__content");
