@@ -1,3 +1,9 @@
+const clearErrors = () => {
+  document
+    .querySelectorAll(".error, .app-status-message")
+    .forEach((error) => error.remove());
+};
+
 window.addEventListener("load", () => {
   const form = document.querySelector(".app-form");
   const requiredFields = Array.from(form.querySelectorAll("[required]"));
@@ -5,10 +11,20 @@ window.addEventListener("load", () => {
 
   submitButton.addEventListener("click", (e) => {
     e.preventDefault();
+    clearErrors();
+
+    const invalidFields = [];
 
     requiredFields.forEach((field) => {
+      if (field.validity.valid) {
+        field.removeAttribute("aria-invalid");
+        return;
+      }
+
       const errorId = `${field.getAttribute("id")}-error`;
       const ariaDescribedBy = field.getAttribute("aria-describedby");
+
+      invalidFields.push(field);
 
       field.setAttribute("aria-invalid", "true");
       field.setAttribute(
@@ -24,17 +40,23 @@ window.addEventListener("load", () => {
     });
 
     // Only show validation message when required settings are correct
-    if (requiredFields.length > 0) {
+    if (invalidFields.length > 0) {
       form.insertAdjacentHTML(
         "beforebegin",
         `
       <div class="app-status-message app-status-message--error">
-        <span id="app-status-message-title">4 errors found:</span>
+        <span id="app-status-message-title">${
+          invalidFields.length
+        } errors found:</span>
         <ul role="list" class="app-comma-list" tabindex="-1" aria-labelledby="app-status-message-title">
-          <li><a href="#firstname">Firstname</a></li>
-          <li><a href="#lastname">Lastname</a></li>
-          <li><a href="#reg-num">Vehicle registration number</a></li>
-          <li><a href="#additional-info">Additional vehicle requests</a></li>
+          ${invalidFields
+            .map(
+              (field) =>
+                `<li><a href="#${field.getAttribute(
+                  "id"
+                )}">${field.previousElementSibling.textContent.trim()}</a></li>`
+            )
+            .join("")}
         </ul>
       </div>
       `
